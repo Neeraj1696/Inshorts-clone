@@ -1,0 +1,24 @@
+.newsCard {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 2px 5px black;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.newsImage {
+  object-fit: cover;
+  width: 320px;
+  height: 260px;
+}
+.newsText {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Author {
+  font-size: 12px;
+  font-weight: 300;
+  color: rgb(90, 97, 97);
+}
