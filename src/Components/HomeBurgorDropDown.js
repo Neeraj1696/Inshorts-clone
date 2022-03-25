@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SwipeableTemporaryDrawer() {
+export default function SwipeableTemporaryDrawer({ setCategories }) {
   const classes = useStyles();
   const [state, setState] = React.useState({
     left: false,
@@ -54,7 +54,7 @@ export default function SwipeableTemporaryDrawer() {
       <Divider />
       <List>
         {Categories.map((text, index) => (
-          <ListItem button key={text}>
+          <ListItem button key={text} onClick={() => setCategories(text)}>
             <ListItemText primary={text} />
           </ListItem>
         ))}

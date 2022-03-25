@@ -2,7 +2,7 @@ import React from "react";
 import "./Nav.css";
 import HomeBurgorDropDown from "./HomeBurgorDropDown";
 
-function Nav() {
+function Nav({ setCategories }) {
   return (
     <div className="nav">
       <div className="menu">
